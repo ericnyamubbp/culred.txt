@@ -1,0 +1,1 @@
+wget https://raw.githubusercontent.com/ericnyamubbp/culred.txt/master/curls.for.curl.poc ;for i in `cat curls.for.curl.poc`; do curl  -s -k --max-time 7 --connect-timeout 7 -L  -o /dev/null -w %{http_code} %{url_effective}n ; done
